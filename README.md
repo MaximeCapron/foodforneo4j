@@ -6,7 +6,7 @@
 Pour reconstituer la BDD, copier-coller tout ce qui suit dans une fenêtre Neo4j.
 
 
-"""
+```
 // Supprimer tout ce qui préexiste pour avoir une feuille propre
 
 MATCH (n)
@@ -51,6 +51,6 @@ MATCH (p {id: rel.index})
 MATCH (c {id: rel.index_relation})
 MERGE (p)-[r:EMPLOYE_DANS]->(c)
 ON CREATE SET r.position = rel.position
-"""
+```
 
 
