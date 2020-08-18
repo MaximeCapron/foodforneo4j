@@ -53,4 +53,25 @@ MERGE (p)-[r:EMPLOYE_DANS]->(c)
 ON CREATE SET r.position = rel.position
 ```
 
+## Questions fréquentes
+
+* Qui reste-il à convaincre du projet D ?
+
+```
+MATCH (p:Person)-[rel:EMPLOYE_DANS]-(c:Company)
+WHERE p.position_D = "A convaincre"
+RETURN p.nom AS nom, c.titre AS entreprise, rel.position AS position
+```
+
+* Quelle est la distance entre le CEO d’OBS et le CEO de CCorp ?
+
+```
+MATCH (a:Person)-[rel:EMPLOYE_DANS {position:"CEO"}]-(c:Company {titre:"OBS"})
+MATCH (b:Person)-[rel2:EMPLOYE_DANS {position:"CEO"}]-(d:Company {titre:"ECorp"})
+MATCH p = shortestPath((a)-[*]-(b))
+RETURN a,b,c,d,p
+```
+
+Une seule personne se trouve entre les deux : à contacter !
+
 
