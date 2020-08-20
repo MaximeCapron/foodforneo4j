@@ -63,6 +63,9 @@ WHERE p.position_D = "A convaincre"
 RETURN p.nom AS nom, c.titre AS entreprise, rel.position AS position
 ```
 
+Certains détracteurs subsistent : à contacter !
+
+
 * Quelle est la distance entre le CEO d’OBS et le CEO de CCorp ?
 
 ```
@@ -72,6 +75,20 @@ MATCH p = shortestPath((a)-[*]-(b))
 RETURN a,b,c,d,p
 ```
 
-Une seule personne se trouve entre les deux : à contacter !
+Une seule personne se trouve entre les deux : peut-on lui demander d'interférer en notre faveur ?
 
 
+* Quels partenaires n'ont aucune relation directe avec OBS (ne sont pas "surveillés") ?
+
+```
+MATCH (a:Company)-[:EMPLOYE_DANS]-(p:Person)
+WHERE NOT a.titre = "OBS"
+WITH p
+MATCH (c:Company {titre:"OBS"})
+MATCH short=shortestpath((c)-[*]-(p))
+WITH p,length(short) AS len
+WHERE len > 2
+RETURN p.nom AS nom
+```
+
+Nous avons une liste de 12 personnes potentielles à contacter !
