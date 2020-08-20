@@ -66,7 +66,7 @@ RETURN p.nom AS nom, c.titre AS entreprise, rel.position AS position
 Certains détracteurs subsistent : à contacter !
 
 
-* Quelle est la distance entre le CEO d’OBS et le CEO de CCorp ?
+* Quelle est la distance entre le CEO d’OBS et le CEO de ECorp ?
 
 ```
 MATCH (a:Person)-[rel:EMPLOYE_DANS {position:"CEO"}]-(c:Company {titre:"OBS"})
