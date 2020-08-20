@@ -75,7 +75,7 @@ MATCH p = shortestPath((a)-[*]-(b))
 RETURN a,b,c,d,p
 ```
 
-Une seule personne se trouve entre les deux : peut-on lui demander d'interférer en notre faveur ?
+Une seule personne se trouve entre les deux : peut-on lui demander d'intercéder en notre faveur ?
 
 
 * Quels partenaires n'ont aucune relation directe avec OBS (ne sont pas "surveillés") ?
