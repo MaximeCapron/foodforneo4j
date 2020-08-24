@@ -1,0 +1,72 @@
+<html>
+    <head>
+        <title>Neovis</title>
+        <style type="text/css">
+            #viz{
+                width: 900px;
+                height: 700px;
+                border: 1px solid lightgray;
+                font: 22pt arial;
+            }
+        </style>
+        <script src="https://rawgit.com/neo4j-contrib/neovis.js/master/dist/neovis.js"></script>
+    </head>
+    <script>
+                
+        function draw(deal){
+            var config = {
+                container_id: "viz",
+                server_url: "bolt://3.90.65.37:34875",
+                server_user: "neo4j",
+                server_password: "volumes-capes-retrievals",
+                labels:{
+                    "Person":{
+                        community: "Employeur",
+                        caption: "nom"
+                    },
+                    "Company":{
+                        caption: "titre",
+                        font:{
+                            color:"Grey"
+                        }
+                    }
+                },
+                relationships:{
+                    "CONNAISSANCE":{
+                        caption: false,
+                    },
+                    "EMPLOYE_DANS":{
+                        caption: false,
+                    },
+                    "FILIALE":{
+                        caption: false,
+                    },
+                    "SUPERIEUR":{
+                        caption: false,
+                    }
+                },
+                
+                // USE CASES
+                
+                // Afficher le graph lié à l'affaire "deal" :
+                
+       //         initial_cypher: 'MATCH (c1:Company {titre:"OBS"})-[r1:EMPLOYE_DANS]-(p1:Person)-[r2:CONNAISSANCE]-(p2:Person)-[r3:EMPLOYE_DANS]-(c2:Company) WHERE EXISTS(p2.position_'+deal+') RETURN c1,c2,r1,r2,r3,p1,p2'
+                
+                // Quels sont les employés de l'entreprise avec qui l'on "deal" ?
+                
+      //      initial_cypher: 'MATCH (p1:Person)-[r1:EMPLOYE_DANS]-(c1:Company {titre:"'+deal'Corp"}) RETURN p1,c1r
+
+      
+                
+            }
+            var viz = new NeoVis.default(config);
+            viz.render();
+        }
+    </script>
+    <body onload="draw('D')">
+        <div id="viz">
+        </div>
+    </body>
+    
+
+</html>
