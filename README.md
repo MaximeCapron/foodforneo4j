@@ -17,7 +17,7 @@ DETACH DELETE n ;
 
 LOAD CSV WITH HEADERS FROM 'https://raw.githubusercontent.com/MaximeCapron/foodforneo4j/master/fichiers%20csv/Humains.csv' AS row FIELDTERMINATOR ';'
 MERGE (p:Person {id: row.index})
-ON CREATE SET p.nom = row.Nom, p.position_A = row.Position_A, p.position_B = row.Position_B, p.position_C = row.Position_C, p.position_D = row.Position_D, p.position_E = row.Position_E;
+ON CREATE SET p.nom = row.Nom, p.position_A = row.Position_A, p.position_B = row.Position_B, p.position_C = row.Position_C, p.position_D = row.Position_D, p.position_E = row.Position_E, p.employeur = row.Employeur;
 
 
 LOAD CSV WITH HEADERS FROM 'https://raw.githubusercontent.com/MaximeCapron/foodforneo4j/master/fichiers%20csv/Entreprises.csv' AS row FIELDTERMINATOR ';'
