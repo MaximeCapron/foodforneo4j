@@ -4,13 +4,13 @@
 
 Ce dossier github contient tout le nécessaire à un projet de création de base de données par graphe. On s'intéresse ici à des données (fictives) représentant des relations entre stakeholders (Orange Business Services et ses clients). Afin d'optimiser les chances de gagner un contrat pour OBS, on utilise les Graph Databases permet de montrer les relations (directes et indirectes) entre les acteurs. Toutes les personnes clefs sont identifiées, engagées au bon niveau, et qualifiées (avocat, neutre, adversaire).
 
-* le fichier "interactions.ipynb" qui permet de générer une base de données d'exemple "Stakeholders' map", d'ajouter ou de supprimer des noeuds ou des relations, puis d'investiguer dans la base de données pour créer des rapports sur des dossiers en particulier.
+* Le fichier "interactions.ipynb" permet de générer une base de données d'exemple "Stakeholders' map", d'ajouter ou de supprimer des noeuds ou des relations, puis d'investiguer dans la base de données pour créer des rapports sur des dossiers en particulier.
 
-* fichiers_csv contient les fichiers csv nécessaires à la bonne marche du notebook ci-dessus.
+* "Fichiers_csv" contient les fichiers csv nécessaires à la bonne marche du notebook ci-dessus.
 
-* neovis_graph est un dossier qui rassemble du code HTML pour créer des visualisations de graphes. Il y a deux fichiers à l'intérieur : un exemple sur des données n'ayant rien à voir et une tentative de réplication pour les stakeholders' maps (pas terminée).
+* "Neovis_graph" est un dossier qui rassemble du code HTML pour créer des visualisations de graphes. Il y a deux fichiers à l'intérieur : un exemple sur des données n'ayant rien à voir et une tentative de réplication pour les stakeholders' maps (pas terminée).
 
-* dans "divers", on trouve une capture d'écran de la visualisation neo4j (dont le but est de la répliquer à l'aide de neovis.js), et le jupyter notebook ayant servi à générer les noms de personnes se trouvant dans les fichiers csv.
+* Dans "divers", on trouve une capture d'écran de la visualisation neo4j (dont le but est de la répliquer à l'aide de neovis.js), et le jupyter notebook ayant servi à générer les noms de personnes se trouvant dans les fichiers csv.
 
 
 ## Organisation des fichiers pour permettre la bonne création de la BDD graphe fictive
