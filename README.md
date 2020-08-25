@@ -13,15 +13,15 @@ Ce dossier github contient tout le nécessaire à un projet de création de base
 * dans "divers", on trouve une capture d'écran de la visualisation neo4j (dont le but est de la répliquer à l'aide de neovis.js), et le jupyter notebook ayant servi à générer les noms de personnes se trouvant dans les fichiers csv.
 
 
-## Organisation des fichiers pour permettre la bonne création de la BDD graphe
+## Organisation des fichiers pour permettre la bonne création de la BDD graphe fictive
 
 On a besoin dans ce github d'un fichier "Humain" et d'un fichier "Entreprises".
-
-On peut ajouter des relations entre les noeuds, que l'on numérotera ("Relations1", "Relations2", etc.)
     
-Le fichier "Humains" doivent débuter par un index, puis on peut introduire les colonnes de son choix.
-Le fichier "Entreprises" doivent débuter par un index, puis on peut introduire les colonnes de son choix.
+* Le fichier "Humains" doit débuter par un index, puis on peut introduire les colonnes de son choix.
+* Le fichier "Entreprises" doit débuter par un index, puis on peut introduire les colonnes de son choix.
 
-Les fichiers "Relations" doivent commencer par les pointeurs vers les index des deux bouts de la relations, puis on peut introduire les colonnes de son choix. La dernière colonne "nom" comporte le nom de la relation (il doit être similaire sur toute la colonne).
+On peut ajouter des relations entre les noeuds, que l'on numérotera ("Relations1", "Relations2", etc.).
+
+* Les fichiers "Relations" doivent commencer par les pointeurs vers les index des deux bouts de la relations, puis on peut introduire les colonnes de son choix. La dernière colonne "nom" comporte le nom de la relation (il doit être similaire sur toute la colonne).
 
 Pour mieux comprendre, référez-vous directement aux exemples qui se trouvent dans le dossier "fichiers-csv".
