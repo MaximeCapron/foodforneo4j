@@ -1,57 +1,57 @@
-﻿index;index_relation;contexte
-0;50;Contrats signés
-0;51;En discussion avec
-1;52;Connaissance proche
-15;60;Ami
-18;61;Contrats signés
-19;62;En discussion avec
-4;62;Contrats signés
-7;62;En discussion avec
-12;63;Connaissance proche
-2;70;Famille
-3;70;Contrats signés
-10;71;En discussion avec
-8;72;Contrats signés
-5;72;Contrats signés
-13;73;En discussion avec
-18;74;En discussion avec
-14;80;Contrats signés
-2;80;En discussion avec
-0;81;Contrats signés
-1;82;Déjeuner avec
-3;83;Connaissance proche
-17;84;Connaissance proche
-10;90;Contrats signés
-11;92;En discussion avec
-0;92;Connaissance proche
-20;55;Déjeuner avec
-21;55;Connaissance proche
-30;55;Anciens collègues
-32;55;Connaissance proche
-34;57;Anciens collègues
-21;65;Contrats signés
-22;66;En discussion avec
-27;67;Connaissance proche
-20;75;Anciens collègues
-21;75;Contrats signés
-23;77;En discussion avec
-24;85;Ami
-25;95;En discussion avec
-28;96;Anciens collègues
-30;96;Contrats signés
-31;97;En discussion avec
-32;48;Contrats signés
-48;49;Anciens collègues
-48;58;Connaissance proche
-49;68;Contrats signés
-12;68;Anciens collègues
-0;69;Déjeuner avec
-48;78;Ami
-0;78;Anciens collègues
-43;79;Déjeuner avec
-49;79;En discussion avec
-44;79;Anciens collègues
-48;88;Déjeuner avec
-49;89;En discussion avec
-45;89;Contrats signés
-47;99;Connaissance proche
+﻿index;index_relation;contexte;nom
+0;50;Contrats signés;CONNAISSANCE
+0;51;En discussion avec;CONNAISSANCE
+1;52;Connaissance proche;CONNAISSANCE
+15;60;Ami;CONNAISSANCE
+18;61;Contrats signés;CONNAISSANCE
+19;62;En discussion avec;CONNAISSANCE
+4;62;Contrats signés;CONNAISSANCE
+7;62;En discussion avec;CONNAISSANCE
+12;63;Connaissance proche;CONNAISSANCE
+2;70;Famille;CONNAISSANCE
+3;70;Contrats signés;CONNAISSANCE
+10;71;En discussion avec;CONNAISSANCE
+8;72;Contrats signés;CONNAISSANCE
+5;72;Contrats signés;CONNAISSANCE
+13;73;En discussion avec;CONNAISSANCE
+18;74;En discussion avec;CONNAISSANCE
+14;80;Contrats signés;CONNAISSANCE
+2;80;En discussion avec;CONNAISSANCE
+0;81;Contrats signés;CONNAISSANCE
+1;82;Déjeuner avec;CONNAISSANCE
+3;83;Connaissance proche;CONNAISSANCE
+17;84;Connaissance proche;CONNAISSANCE
+10;90;Contrats signés;CONNAISSANCE
+11;92;En discussion avec;CONNAISSANCE
+0;92;Connaissance proche;CONNAISSANCE
+20;55;Déjeuner avec;CONNAISSANCE
+21;55;Connaissance proche;CONNAISSANCE
+30;55;Anciens collègues;CONNAISSANCE
+32;55;Connaissance proche;CONNAISSANCE
+34;57;Anciens collègues;CONNAISSANCE
+21;65;Contrats signés;CONNAISSANCE
+22;66;En discussion avec;CONNAISSANCE
+27;67;Connaissance proche;CONNAISSANCE
+20;75;Anciens collègues;CONNAISSANCE
+21;75;Contrats signés;CONNAISSANCE
+23;77;En discussion avec;CONNAISSANCE
+24;85;Ami;CONNAISSANCE
+25;95;En discussion avec;CONNAISSANCE
+28;96;Anciens collègues;CONNAISSANCE
+30;96;Contrats signés;CONNAISSANCE
+31;97;En discussion avec;CONNAISSANCE
+32;48;Contrats signés;CONNAISSANCE
+48;49;Anciens collègues;CONNAISSANCE
+48;58;Connaissance proche;CONNAISSANCE
+49;68;Contrats signés;CONNAISSANCE
+12;68;Anciens collègues;CONNAISSANCE
+0;69;Déjeuner avec;CONNAISSANCE
+48;78;Ami;CONNAISSANCE
+0;78;Anciens collègues;CONNAISSANCE
+43;79;Déjeuner avec;CONNAISSANCE
+49;79;En discussion avec;CONNAISSANCE
+44;79;Anciens collègues;CONNAISSANCE
+48;88;Déjeuner avec;CONNAISSANCE
+49;89;En discussion avec;CONNAISSANCE
+45;89;Contrats signés;CONNAISSANCE
+47;99;Connaissance proche;CONNAISSANCE
