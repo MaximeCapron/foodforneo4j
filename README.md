@@ -6,11 +6,13 @@ Ce dossier github contient tout le nécessaire à un projet de création de base
 
 * Le fichier "interactions.ipynb" permet de générer une base de données d'exemple "Stakeholders' map", d'ajouter ou de supprimer des noeuds ou des relations, puis d'investiguer dans la base de données pour créer des rapports sur des dossiers en particulier.
 
+
 * "Fichiers_csv" contient les fichiers csv nécessaires à la bonne marche du notebook ci-dessus.
 
 * "Neovis_graph" est un dossier qui rassemble du code HTML pour créer des visualisations de graphes. Il y a deux fichiers à l'intérieur : un exemple sur des données n'ayant rien à voir et une tentative de réplication pour les stakeholders' maps (pas terminée).
 
-* Dans "divers", on trouve une capture d'écran de la visualisation neo4j (dont le but est de la répliquer à l'aide de neovis.js), et le jupyter notebook ayant servi à générer les noms de personnes se trouvant dans les fichiers csv.
+* Dans "divers", on trouve une capture d'écran de la visualisation neo4j (dont le but est de la répliquer à l'aide de neovis.js), et le jupyter notebook ayant servi à générer les noms de personnes se trouvant dans les fichiers csv. Se trouve aussi "interactions_from_scratch.ipynb" contient la petite présentation faite, en créant un graphe plus petit à partir de rien.
+
 
 
 ## Organisation des fichiers pour permettre la bonne création de la BDD graphe fictive
