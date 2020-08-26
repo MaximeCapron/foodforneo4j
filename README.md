@@ -25,3 +25,15 @@ On peut ajouter des relations entre les noeuds, que l'on numérotera ("Relations
 * Les fichiers "Relations" doivent commencer par les pointeurs vers les index des deux bouts de la relations, puis on peut introduire les colonnes de son choix. La dernière colonne "nom" comporte le nom de la relation (il doit être similaire sur toute la colonne).
 
 Pour mieux comprendre, référez-vous directement aux exemples qui se trouvent dans le dossier "fichiers-csv".
+
+
+## Création d'une instance de neo4j (sandbox)
+
+Rejoindre ce site : https://sandbox.neo4j.com/?&program_name=PPC%20GG%2020%20Neo4j%20Sandbox
+
+Eventuellement, s'identifier. Créer ensuite un nouveau projet.
+
+Une fois le projet créé, vous pouvez commencer.
+En extraire les détails de connexion (en cliquant sur la petite flèche tout à droite du projet que vous venez de créer) : l'identifiant est en principe "neo4j", vous aurez donc besoin du mot de passe et de l'URL Bolt.
+
+Dans le Jupyter Notebook, rentrer ces trois informations. Vous êtes prêt !
