@@ -39,3 +39,15 @@ Une fois le projet créé, vous pouvez commencer.
 En extraire les détails de connexion (en cliquant sur la petite flèche tout à droite du projet que vous venez de créer) : l'identifiant est en principe "neo4j", vous aurez donc besoin du mot de passe et de l'URL Bolt.
 
 Dans le Jupyter Notebook, rentrer ces trois informations. Vous êtes prêt !
+
+### Remarque
+
+Attention cependant ;) Vous n'avez plus beaucoup de temps ! Une sandbox ne dure originellement que 3 jours, mais peut être étendue une semaine de plus.
+
+Deux options s'offrent à vous pour une organisation plus pérenne :
+
+- Passer à un système cloud pérenne (Neo4j Aura), payant.
+- Tout mettre en local dans votre ordinateur (Neo4j Desktop).
+
+
+
