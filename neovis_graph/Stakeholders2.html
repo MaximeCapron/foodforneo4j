@@ -13,7 +13,7 @@
     </head>
     <script>
                 
-        function draw(deal){
+        function draw(){
             var config = {
                 container_id: "viz",
                 server_url: "bolt://3.90.65.37:34875",
@@ -21,7 +21,6 @@
                 server_password: "volumes-capes-retrievals",
                 labels:{
                     "Personne":{
-                        community: "Employeur",
                         caption: "Nom"
                     },
                     "Entreprise":{
@@ -34,33 +33,19 @@
                 relationships:{
                     "CONNAISSANCE":{
                         caption: false,
-                        thickness: 1
                     },
                     "EMPLOYE_DANS":{
                         caption: false,
-                        thickness: 1
                     },
                     "FILIALE":{
                         caption: false,
-                        thickness: 1
                     },
                     "SUPERIEUR":{
                         caption: false,
-                        thickness: 1
                     }
                 },
-                
-                // USE CASES
-                
-                // Afficher le graph lié à l'affaire "deal" :
-                
-                initial_cypher: 'MATCH (c1:Entreprise {Titre:"OBS"})-[r1:EMPLOYE_DANS]-(p1:Personne)-[r2:CONNAISSANCE]-(p2:Personne)-[r3:EMPLOYE_DANS]-(c2:Entreprise) WHERE EXISTS(p2.Position_'+deal+') RETURN c1,c2,r1,r2,r3,p1,p2'
-                
-                // Quels sont les employés de l'entreprise avec qui l'on "deal" ?
-                
-      //      initial_cypher: 'MATCH (p1:Person)-[r1:EMPLOYE_DANS]-(c1:Company {titre:"'+deal'Corp"}) RETURN p1,c1r'
-
-            
+                                
+                initial_cypher: 'MATCH p=()-->() RETURN p'
                 
             }
             
@@ -69,7 +54,7 @@
             viz.render();
         }
     </script>
-    <body onload="draw('E')">
+    <body onload="draw()">
         <div id="viz">
         </div>
     </body>
